@@ -306,6 +306,14 @@ const routes = [
     icon: <Icon as={VscFileSubmodule} width='20px' height='20px' color='inherit' />,
     component: module,
   },
+  {
+    name: "Dashboard",
+    layout: [ROLE_PATH.superAdmin, ROLE_PATH.user],
+    path: "/dashboard",
+    under: "dashboard",
+    icon: <Icon as={VscFileSubmodule} width='20px' height='20px' color='inherit' />,
+    component: module,
+  },
   // // ------------- Text message Routes ------------------------
   // {
   //   name: "Text Msg",
